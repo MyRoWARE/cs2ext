@@ -8,9 +8,13 @@ int main() {
 
 		const uintptr_t localPlayer = VARS::memRead<uintptr_t>(VARS::baseAddress + 0x16C2D98);
 
-		int health = VARS::memRead<int>(localPlayer + 0x32C);
+		if (!localPlayer) { 
+			continue;
+		}
 
-		std::cout << health << std::endl;
+		int32_t health = VARS::memRead<int>(localPlayer + 0x32C);
+
+		std::cout << "Local Player Health: \033[1;32m" <<  "" << health << "\033[0m" << std::endl;
 	}
 
 	return 0;
