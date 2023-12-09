@@ -1,1 +1,6 @@
-﻿
+﻿  main.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 57 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  cs2ext.vcxproj -> C:\Users\MyRoWARE\IONOS HiDrive\Projects\cs2ext\x64\Release\cs2ext.exe

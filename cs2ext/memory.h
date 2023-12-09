@@ -78,7 +78,7 @@ namespace VARS {
 
 
 
-	DWORD processId = GetProcess(L"csgo.exe");
+	DWORD processId = GetProcess(L"cs2.exe");
 
 	uintptr_t baseAddress = GetModuleBaseAddress(processId, L"client.dll");
 
